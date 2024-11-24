@@ -2,10 +2,10 @@
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
   outputs = { ... }: {
-    nixosModules = [
-      ./devices/pine64-pinephonepro
-      ./modules/module-list.nix
-    ];
+    nixosModules = {
+      pine64-pinephonepro = ./devices/pine64-pinephonepro;
+      module-list = ./modules/module-list.nix;
+    };
   };
 }
 
