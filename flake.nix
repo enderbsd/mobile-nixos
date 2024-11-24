@@ -5,7 +5,7 @@
 
   outputs = { ... }: {
     nixosModules = {
-      pine64-pinephone = import ./devices/pine64-pinephonepro;
+      pine64-pinephonepro = import ./devices/pine64-pinephonepro;
       module-list = import ./modules/module-list.nix;
     };
   };
